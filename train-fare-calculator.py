@@ -19,3 +19,4 @@ elif customer_age > senior_age:
   print(f'Ticket price is ${round(ticket_cost * senior_discount, 2)}')
 else:
   print(f'Ticket price is ${ticket_cost}')
+  
