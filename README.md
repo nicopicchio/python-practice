@@ -1,4 +1,4 @@
-# Python practice
+# <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="25px"> Python practice 
 
 ## Welcome to my Python learning repository.   
 The idea behind this repository is to practice with Python whilst taking Harvard's [CS50P](https://cs50.harvard.edu/python/2022/).
