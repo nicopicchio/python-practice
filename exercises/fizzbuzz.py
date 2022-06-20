@@ -8,6 +8,15 @@
 # For numbers which are multiples of both three and five (15, 30, etc.) the array should contain the string FizzBuzz instead of the number.
 
 def fizzbuzz(lower, upper):
-  print(list(range(lower, upper)))
+  range_array = list(range(lower, upper+1))
+  for n in range_array:
+    if n % 3 == 0 and n % 5 == 0:
+      print('FizzBuzz')
+    elif n % 3 == 0:
+      print('Fizz')
+    elif n % 5 == 0:
+      print('Buzz')
+    else:
+      print(n)
 
-fizzbuzz(1, 5)
+fizzbuzz(1, 30)
