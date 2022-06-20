@@ -3,8 +3,16 @@
 # Customers up to 18yo get 20% discount
 # Customers over 65yo get 40% discount
 
-customer_age = int(input('Enter age: '))
-travel_distance = float(input('Enter travel distance: '))
+try: 
+  customer_age = int(input('Enter age: '))
+except ValueError:
+  print('Enter age in a valid format')
+
+try:
+  travel_distance = float(input('Enter travel distance: '))
+except ValueError:
+  print('Enter travel distance in a valid format, i.e. 10.4')
+
 price_per_km = float(0.21)
 junior_age = int(18)
 senior_age = int(65)
