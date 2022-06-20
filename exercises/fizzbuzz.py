@@ -10,16 +10,14 @@
 def get_lower():
   while True:
     try:
-      lower = int(input('Enter start number: '))
-      return lower
+      return int(input('Enter start number: '))
     except ValueError:
       print('Enter number in a valid format')
 
 def get_upper():
   while True:
     try:
-      upper = int(input('Enter end number: '))
-      return upper
+      return int(input('Enter end number: '))
     except ValueError:
       print('Enter number in a valid format')
 
