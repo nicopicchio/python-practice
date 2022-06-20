@@ -7,8 +7,24 @@
 # Where a number is a multiple of five (5, 10, etc.) the array should contain Buzz instead of of the number.
 # For numbers which are multiples of both three and five (15, 30, etc.) the array should contain the string FizzBuzz instead of the number.
 
-def fizzbuzz(lower, upper):
-  range_array = list(range(lower, upper+1))
+def get_lower():
+  while True:
+    try:
+      lower = int(input('Enter start number: '))
+      return lower
+    except ValueError:
+      print('Enter number in a valid format')
+
+def get_upper():
+  while True:
+    try:
+      upper = int(input('Enter end number: '))
+      return upper
+    except ValueError:
+      print('Enter number in a valid format')
+
+def fizzbuzz(start, end):
+  range_array = list(range(start, end+1))
   for n in range_array:
     if n % 3 == 0 and n % 5 == 0:
       print('FizzBuzz')
@@ -19,4 +35,4 @@ def fizzbuzz(lower, upper):
     else:
       print(n)
 
-fizzbuzz(1, 30)
+fizzbuzz(get_lower(), get_upper())
